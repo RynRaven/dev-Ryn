@@ -1,11 +1,25 @@
-import React from 'react'
+import React from 'react';
 
-const app = () => {
+import { Brand, CTA, NavBar } from './components';
+import { Blog, Features, Footer, Header, Possibility, What } from './containers';
+import './App.scss';
+
+const App = () => {
     return (
-        <div>
-            <h1>Hello World!</h1>
+        <div className="App">
+            <div className="gradient_bg">
+                <NavBar />
+                <Header />
+            </div> 
+            <Brand />
+            <What />
+            <Features />
+            <Possibility />
+            <CTA />
+            <Blog />
+            <Footer />
         </div>
     )
 }
 
-export default app
+export default App
