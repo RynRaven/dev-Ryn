@@ -1,0 +1,125 @@
+.page {
+
+    &__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+
+        &-links {
+            display: flex;
+            flex: 1;
+            justify-content: flex-start;
+            align-items: center;
+
+            &_logo{
+                margin-right: 2rem;
+
+                & img{
+                    width: 62px;
+                    height: 16px;
+                }
+            }
+
+            &_container {
+                display: flex;
+                flex-direction: row;
+
+                & p {
+                    color: #fff;
+                    font-family: var(--font-family);
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 25px;
+                    text-transform: capitalize;
+                    margin: 0 1rem;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &-menu {
+            margin-left: 1rem;
+            display: none;
+            position: relative;
+
+            & svg {
+                cursor: pointer;
+            }
+
+            &_container {
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                flex-direction: column;
+                text-align: end;
+                background: var(--color-footer);
+                padding: 2rem;
+                position: absolute;
+                top: 40px;
+                right: -40px;
+                margin-top: 1rem;
+                min-width: 95vw;
+                border-radius: 5px;
+                box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+
+                & p {
+                    color: #fff;
+                    font-family: var(--font-family);
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 25px;
+                    text-transform: capitalize;
+                    margin: 0 1rem;
+                    cursor: pointer;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px){
+    .page {
+        &__navbar {
+            padding: 2rem;
+
+            &-menu {
+                margin: 0;
+
+                &_container {
+                    top: 60px;
+                }
+            }
+        }
+    }    
+}
+
+@media screen and (max-width: 770px){
+    .page {
+        &__navbar {
+            padding: 2rem 3rem;
+            &-menu{
+                &_container{
+                   // right: -30px;
+                }
+            }
+        }
+    }    
+}
+
+@media screen and (max-width: 1050px) {
+    .page {
+        &__navbar {
+            &-links{
+                &_container {
+                    display: none;
+                }
+            }
+            &-menu {
+                display: flex;
+            }
+        }
+    }
+    
+}
