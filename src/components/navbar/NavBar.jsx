@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './navbar.scss';
-import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
-import logo from '../../assets/logo.svg'
+import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
+import logo from '../../assets/w-logo.png'
 
 const Menu = () => (
     <>
@@ -16,7 +16,7 @@ const NavBar = () => {
     const [toggleMenu, setToggleMenu] = useState(false)
 
     return (
-        <div className="page__navbar">
+        <div className="page__navbar section--padding">
             <div className="page__navbar-links">
                 <div className="page__navbar-links_logo">
                     <img src={logo} alt="logo" />

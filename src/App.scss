@@ -7,7 +7,8 @@
 
 body {
     background: var(--color-bg);
-}
+    letter-spacing: 1px;
+} 
 
 a {
     color: unset;
@@ -15,11 +16,11 @@ a {
 }
 
 .gradient__bg {
-    background:-moz-radial-gradient(circle at 27% 5%, rgba(113, 19, 19, 0.99) 0%, rgba(26, 15, 26, 1) 100%);
-    background:-webkit-radial-gradient(circle at 27% 5%, rgba(113, 19, 19, 0.99) 0%, rgba(26, 15, 26, 1) 100%);
-    background:-o-radial-gradient(circle at 27% 5%, rgba(113, 19, 19, 0.99) 0%, rgba(26, 15, 26, 1) 100%);
-    background:-ms-radial-gradient(circle at 27% 5%, rgba(113, 19, 19, 0.99) 0%, rgba(26, 15, 26, 1) 100%);
-    background:radial-gradient(circle at 27% 5%, rgba(113, 19, 19, 0.99) 0%, rgba(26, 15, 26, 1) 100%);
+    background:-moz-radial-gradient(circle at 10% 0%, rgba(80, 17, 17, 0.99) 0%, rgba(40, 20, 40, 1) 100%);
+    background:-webkit-radial-gradient(circle at 10% 0%, rgba(80, 17, 17, 0.99) 0%, rgba(40, 20, 40, 1) 100%);
+    background:-o-radial-gradient(circle at 10% 0%, rgba(80, 17, 17, 0.99) 0%, rgba(40, 20, 40, 1) 100%);
+    background:-ms-radial-gradient(circle at 10% 0%, rgba(80, 17, 17, 0.99) 0%, rgba(40, 20, 40, 1) 100%);
+    background:radial-gradient(circle at 10% 0%, rgba(80, 17, 17, 0.99) 0%, rgba(40, 20, 40, 1) 100%);
 }
 
 .gradient__text {
@@ -30,13 +31,8 @@ a {
 }
 
 .section {
-
-    &__padding {
-        padding: 4rem 6rem;
-    }
-
-    &__margin {
-        margin: 4rem 6rem;
+    &--padding {
+        padding: 4rem 8rem;
     }
 }
 
@@ -67,28 +63,53 @@ a {
     }
 }
 
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+    25% {
+        transform: rotate(3deg) translate3d(0, 0, 0);
+    }
+    50% {
+        transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+    75% {
+        transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+    100% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+}
+
 @media screen and (max-width: 700px){
     .section {
-
         &__padding {
             padding: 4rem;
-        }
-    
-        &__margin {
-            margin: 4rem;
         }
     }
 }
 
 @media screen and (max-width: 550px){
     .section {
-
         &__padding {
             padding: 4rem 2rem;
         }
-    
-        &__margin {
-            margin: 4rem 2rem;
-        }
     }
+}
+
+body::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(51, 51, 51, 0.26);
+	border-radius: 20px;
+	background-color: #00000000;
+}
+
+body::-webkit-scrollbar {
+	width: 14px;
+	background-color: #0000000e;
+}
+
+body::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.616);
+	background-color: #2b030ece;
 }
