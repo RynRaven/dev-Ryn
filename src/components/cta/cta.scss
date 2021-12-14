@@ -1,0 +1,55 @@
+.cta__container {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-bgdown);
+    font-family: var(--font-family);
+
+        &_resume, &_contact {
+            padding: 2rem 4rem;
+            width: 45%;
+            height: 13rem;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            background-color: var(--color-bgup);
+            filter: drop-shadow(0 5px 20px var(--color-blue));
+            
+            button {
+                padding: 1rem 2rem;
+                width: 10rem;
+                font-size: 22px;
+                border-radius: 30px;
+                border: none;
+                background-color: rgba(54, 23, 45, 0.6);
+                cursor: pointer;
+                color: var(--color-subtext);
+                font-family: var(--font-family);
+                font-weight: 100;
+                box-shadow: 3px 7px 10px #4b14f6;
+
+                &:hover {
+                    animation: rotate 0.7s ease-in-out both;
+                }
+            }
+            
+            h3 {
+                color: var(--color-text);
+                font-size: 36px;
+                font-weight: 100;
+            }
+        }
+
+        &_resume {
+            border-radius: 0 30px 30px 0;
+            left: 0;
+            align-items: flex-end;
+        }
+
+        &_contact {
+            border-radius: 30px 0 0 30px;
+            right: 0;
+            align-items: flex-start;
+        }
+}

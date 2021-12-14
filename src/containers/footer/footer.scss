@@ -1,0 +1,45 @@
+.footer {
+    background-color: var(--color-footer);
+    height: 15vh;
+    font-family: var(--font-family);
+    color: var(--color-text);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    filter: drop-shadow(0 5px 20px var(--color-blue));
+
+    &__up {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        padding: 1rem 5rem;
+
+        &-logo {
+            padding-left: 2rem;
+        }
+
+        &-nav {
+            display: flex;
+            justify-content: space-evenly;
+            width: 40%;
+            float: right;
+
+            p {
+                font-size: 24px;
+            }
+        }
+    }
+
+    &__down {
+        text-align: center;
+        background-color: var(--color-bgup);
+        padding: 1rem;
+
+        p {
+            font-size: 18px;
+            letter-spacing: .3rem;
+        }
+    }
+    
+}

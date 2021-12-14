@@ -1,0 +1,122 @@
+.contacts {
+    height: 100vh;
+    position: relative;
+    background-color: var(--color-bgdown);
+
+    &__container { 
+
+        &_submit , &_socials {
+            height: 55%;
+            position: absolute;
+            top: 30%;
+            padding: 1rem 0;
+            filter: drop-shadow(0 5px 20px var(--color-blue));
+            padding: 2rem 3rem;
+        }
+
+        &_submit { 
+            background-color: var(--color-bgup);
+            width: 60%;
+            border-radius: 0 30px 30px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: flex-end;
+            
+            &-subtittle {
+                font-size: 36px;
+                color: blanchedalmond;
+                font-family: var(--font-family);
+                padding: 0 2rem;
+            }
+
+            &--form {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                
+
+                &-name, &-mail, &-field {
+                    font-size: 20px;
+                    padding: 1rem;
+                    font-family: var(--font-family);
+                    width: 500px;
+                    margin: .5rem;
+                    border-radius: 20px;
+                    font-weight: 600;
+
+                    &::placeholder {
+                        color: var(--color-blue);
+                        opacity: 80%;
+                    }
+
+                }
+                
+                &-button {
+                    padding: .5rem .7rem;
+                    margin: 1rem;
+                    width: 6.5rem;
+                    font-size: 20px;
+                    border-radius: 30px;
+                    border: none;
+                    background-color: rgba(54, 23, 45, 0.6);
+                    cursor: pointer;
+                    color: var(--color-subtext);
+                    font-family: var(--font-family);
+                    font-weight: 100;
+                    box-shadow: 3px 7px 10px #4b14f6;
+
+                    &:hover {
+                        animation: rotate 0.7s ease-in-out both;
+                    }
+                }   
+
+                &-done {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+
+        &_socials {
+            background-color: rgb(80, 1, 54);
+            width: 30%;
+            right: 0;
+            border-radius: 30px 0 0 30px;
+            display:flex;
+
+            &-info { 
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                flex: 3;
+
+                p {
+                    color: blanchedalmond;
+                    font-family: var(--font-family);
+                    font-size: 24px;
+                    display: flex;
+                    align-items: center;
+                    margin: 1rem 0;
+
+                    span {
+                        padding-right: .5rem
+                    };
+                }
+            }
+
+
+            &-links{
+                flex: 1;
+                padding-top: 2rem;
+            }
+        }
+    }
+}
+
+.result-text {
+    color: blanchedalmond;
+    font-family: var(--font-family);
+    font-size: 22px;
+}
+

@@ -1,36 +1,41 @@
 .page {
+    
 
     &__header {
         display: flex;
         flex-wrap: wrap;
-        
+        background-image: url(../../assets/bg.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        height: 95vh;
+
         &-content {
-            flex: 6;
+            flex: 4;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            justify-content: center;
+            justify-content: flex-start;
 
             &_text{
                 color: var(--color-text);
                 font-family: var(--font-family);
-                margin-top: -10rem;
 
                 &-intro {
-                    font-size: 36px;
+                    font-size: 3rem;
                     font-weight: 200;
                 }
 
                 &-main {
-                    font-family: var(--font-header);
-                    font-size: 96px;
-                    letter-spacing: 1px;
-                    font-weight: 200;
+                    font-family: var(--font-family);
+                    font-size: 10rem;
+                    letter-spacing: 3px;
+                    font-weight: 600;
                     padding: 1rem 0;
                 }
 
                 &-description {
-                    font-size: 30px;
+                    font-size: 3rem;
                     font-weight: 100;
                     color: var(--color-subtext);
                 }
@@ -40,7 +45,7 @@
                 padding: 1rem 2rem;
                 width: 20rem;
                 margin: 3rem 0;
-                font-size: 24px;
+                font-size: 2rem;
                 border-radius: 30px;
                 border: none;
                 background-color: rgba(54, 23, 45, 0.6);
@@ -48,7 +53,7 @@
                 color: var(--color-subtext);
                 font-family: var(--font-family);
                 font-weight: 100;
-                box-shadow: 3px 7px 10px rgba(255, 255, 255, 0.171);
+                box-shadow: 3px 7px 10px #4b14f6;
 
                 &:hover {
                     animation: rotate 0.7s ease-in-out both;
@@ -57,92 +62,15 @@
         }
 
         &-image {
-            flex: 3;
-            
-        }
+            flex: 2;
 
-        &-social {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            
-            &_icons { 
-                display: inline-flex;
-                flex-direction: column;
-                font-family: var(--font-family);
-                position: absolute;
-                top: 130px;
-                right: 80px;
-            
+            img {
+                //border: white solid 3px;
+                border-radius: 30%;
 
-                &-icon { 
-                    padding: 1rem 0;
-                    margin: 1.5rem 0;
-                    position: relative;
-                    background-color: #ffffffd3;
-                    border-radius: 50%;
-                    width: 40px;
-                    height: 40px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-                    box-shadow: 0 10px 10px rgba(255, 255, 255, 0.171);
-                    cursor: pointer;
-                    transition: all 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-
-                    &:hover {
-                        transition: all .6s;
-
-                        background-color: #000000;
-                        color: #ffffff;
-
-                        .page__header-social_icons-popup {
-                            top: -37px;
-                            opacity: 1;
-                            visibility: visible;
-                            pointer-events: auto;
-                            text-shadow: 0px -1px 0px rgba(143, 143, 143, 0.247);
-                            font-size: 16px;
-                            background-color: #000000;
-                            color: #ffffff;
-                        }
-
-                        span {
-                            text-shadow: 0px -1px 0px rgb(12, 69, 255);
-                        }
-                    }
-                }
-                
-                &-popup {   
-                    position: absolute;
-                    top: 0;
-                    font-size: 14px;
-                    background-color: #ffffff;
-                    color: #000000;
-                    padding: 5px 8px;
-                    border-radius: 5px;
-                    box-shadow: 0 10px 10px rgba(255, 255, 255, 0.1);
-                    opacity: 0;
-                    pointer-events: none;
-                    transition: all 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-                }
-
-                &-popup::before {
-                    position: absolute;
-                    content: "";
-                    height: 8px;
-                    width: 8px;
-                    background-color: #000000;
-                    bottom: -3px;
-                    left: 50%;
-                    transform: translate(-50%) rotate(45deg);
-                    transition: all 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-                    color: #000000;
-                }
             }
         }
+
     }
 }
 

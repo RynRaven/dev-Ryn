@@ -8,7 +8,7 @@ const Menu = () => (
     <p><a href="#home">Home</a></p>
     <p><a href="#about">About Me</a></p>
     <p><a href="#projects">Projects</a></p>
-    <p><a href="#contact">Contacts</a></p>
+    <p><a href="#contacts">Contacts</a></p>
     </>
 )
 
@@ -38,6 +38,7 @@ const NavBar = () => {
                 </div>
                 )}
             </div>
+
         </div>
     )
 }

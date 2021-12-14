@@ -1,0 +1,54 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-family);
+  background-color: var(--color-bgdown);
+}
+
+.about__tittle {
+  margin: 1rem 0;
+  font-size: 46px;
+  color: var(--color-text);
+}
+
+.about__box {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--color-bgup);
+  border-radius: 30px;
+  filter: drop-shadow(0 5px 20px var(--color-blue));
+  font-size: 30px;
+  color: var(--color-subtext);
+  margin: 1rem 0;
+  padding: 2rem 2rem;
+}
+
+.about__box_info {
+  flex: 2;
+  text-align: start;
+  text-align: justify;
+  padding: 4rem;
+  padding-right: 6rem;
+}
+
+.about__box_image {
+  flex: 1;
+  text-align: center;
+  height: 600px;
+}
+
+.about__box_image img {
+  height: 600px;
+}
+
+.about__box_skills {
+  flex: 2;
+  text-align: end;
+  padding: 4rem;
+}
+
+.about__box_skills ul {
+  list-style-type: none;
+}
+/*# sourceMappingURL=about.css.map */

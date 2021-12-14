@@ -1,0 +1,82 @@
+.socials {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+    &_icons { 
+        display: inline-flex;
+        flex-direction: column;
+        font-family: var(--font-family);
+        position: absolute;
+        right: 80px;
+    
+        &-icon { 
+            padding: 1rem 0;
+            margin: 1.5rem 0;
+            position: relative;
+            background-color: #ffffffa6;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 0 10px 10px #4c14f6d3;
+            cursor: pointer;
+            transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            
+            span {
+                display: flex;
+            }
+            
+            &:hover {
+                transition: all 0.8s;
+
+                background-color: #000000;
+                color: #ffffff;
+
+                .socials_icons-popup {
+                    top: -37px;
+                    opacity: 1;
+                    visibility: visible;
+                    pointer-events: auto;
+                    text-shadow: 0px -1px 0px rgba(143, 143, 143, 0.247);
+                    font-size: 16px;
+                    background-color: #000000;
+                    color: #ffffff;
+                }
+            }
+        }
+        
+        &-popup {   
+            position: absolute;
+            top: 0;
+            left: -30px;
+            font-size: 16px;
+            text-align: center;
+            width: 100px;
+            background-color: #ffffff;
+            color: #000000;
+            padding: 5px 8px;
+            border-radius: 5px;
+            box-shadow: 0 10px 10px #4c14f6d3;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        &-popup::before {
+            position: absolute;
+            content: "";
+            height: 8px;
+            width: 8px;
+            background-color: #000000;
+            bottom: -3px;
+            left: 50%;
+            transform: translate(-50%) rotate(45deg);
+            transition: all 2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            color: #000000;
+        }
+    }
+}

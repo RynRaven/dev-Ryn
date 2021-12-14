@@ -1,0 +1,113 @@
+.page__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-bgup);
+}
+
+.page__navbar-links {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page__navbar-links_logo {
+  margin-right: 2rem;
+  display: flex;
+}
+
+.page__navbar-links_logo img {
+  height: 40px;
+}
+
+.page__navbar-links_container {
+  display: flex;
+  flex-direction: row;
+  margin-right: 4rem;
+}
+
+.page__navbar-links_container p {
+  color: #fff;
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 25px;
+  text-transform: capitalize;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.page__navbar-links_container p:hover {
+  color: rgba(255, 255, 255, 0.795);
+  font-weight: 500;
+  text-shadow: 6px 6px 6px;
+}
+
+.page__navbar-menu {
+  margin-left: 1rem;
+  display: none;
+  position: relative;
+}
+
+.page__navbar-menu svg {
+  cursor: pointer;
+}
+
+.page__navbar-menu_container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: end;
+  background: var(--color-menu);
+  backdrop-filter: blur(5px);
+  padding: 2rem;
+  position: absolute;
+  top: 40px;
+  right: -40px;
+  margin-top: 1rem;
+  min-width: 95vw;
+  border-radius: 5px;
+  box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+}
+
+.page__navbar-menu_container p {
+  color: #fff;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: capitalize;
+  margin: 0 1rem;
+  cursor: pointer;
+  padding: 5px;
+}
+
+@media screen and (max-width: 550px) {
+  .page__navbar {
+    padding: 2rem;
+  }
+  .page__navbar-menu {
+    margin: 0;
+  }
+  .page__navbar-menu_container {
+    top: 60px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .page__navbar {
+    padding: 2rem 3rem;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .page__navbar-links_container {
+    display: none;
+  }
+  .page__navbar-menu {
+    display: flex;
+  }
+}
+/*# sourceMappingURL=navbar.css.map */

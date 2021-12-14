@@ -1,0 +1,57 @@
+.projects {
+    height: 100vh;
+    position: relative;
+    background-color: var(--color-bgdown);
+
+
+    &__container {
+        background-color: var(--color-bgup);
+        width: 100%;
+        position: absolute;
+        top: 30%;
+        padding: 1rem 0;
+        filter: drop-shadow(0 4px 20px var(--color-blue));
+        
+        &_card {
+            //border: 3px var(--color-blue) solid;
+            border-radius: 30px;
+            padding: 2rem;
+            width: 100%;
+            
+
+            & img{
+               // border: 3px var(--color-blue) solid;
+                width: 100%;
+                cursor: pointer;
+                box-shadow: 2px 4px 10px #4c14f6c4;
+            }
+
+            &-text{
+                font-size: 20px;
+                font-family: var(--font-family);
+                color: var(--color-text);
+                padding: 1rem 0;
+            }
+
+            & button {
+                padding: .5rem .7rem;
+                margin: 0 .4rem;
+                width: 6.5rem;
+                font-size: 20px;
+                border-radius: 30px;
+                border: none;
+                background-color: rgba(54, 23, 45, 0.6);
+                cursor: pointer;
+                color: var(--color-subtext);
+                font-family: var(--font-family);
+                font-weight: 100;
+                box-shadow: 3px 7px 10px #4b14f6;
+
+                &:hover {
+                    animation: rotate 0.7s ease-in-out both;
+                }
+            }
+        }
+    }
+}
+

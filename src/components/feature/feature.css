@@ -1,0 +1,31 @@
+.container__tittle {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__tittle h1, .container__tittle h3 {
+  font-family: var(--font-family);
+}
+
+.container__tittle h1 {
+  font-size: 56px;
+  color: var(--color-text);
+}
+
+.container__tittle h3 {
+  font-size: 28px;
+  color: var(--color-subtext);
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+
+.container__tittle_item {
+  height: 3px;
+  width: 100px;
+  background-color: var(--color-blue);
+}
+/*# sourceMappingURL=feature.css.map */
