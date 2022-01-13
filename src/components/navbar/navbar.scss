@@ -4,7 +4,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--color-bgup);
+    background-color: var(--color-dark);
+    filter: brightness(140%);
+    box-shadow: 0px -1px 30px 5px var(--color-bright);
+    padding: 1.5rem 6rem;
     
         &-links {
             display: flex;
@@ -28,9 +31,9 @@
                 margin-right: 4rem;
 
                 & p {
-                    color: #fff;
+                    color: var(--color-neutral);
                     font-family: var(--font-family);
-                    font-weight: 300;
+                    font-weight: 500;
                     font-size: 26px;
                     line-height: 25px;
                     text-transform: capitalize;
@@ -38,9 +41,9 @@
                     cursor: pointer;
 
                     &:hover {
-                        color: rgba(255, 255, 255, 0.795);
-                        font-weight: 500;
-                        text-shadow: 6px 6px 6px ;
+                        font-weight: 600;
+                        font-size: 28px;
+                        text-shadow: 6px 6px 6px var(--color-bright);
                     }
                 }
             }

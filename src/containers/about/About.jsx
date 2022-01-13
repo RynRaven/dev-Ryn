@@ -11,26 +11,27 @@ function About () {
             <div className="about__box">
                 <div className="about__box_info">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolorum voluptates aperiam veritatis quos et quia reprehenderit laborum accusantium amet!
+                        Hai! My name is Ryn Oliveira and I am self-thought Front-End developer based in Riga, Latvia. Started my learning of Web development in the August of 2020. I'm able to work with following technologies: 
                     </p>
+                </div>
+                <div className="about__box_skills">
+                    <div className="about__box_skills-container">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Sass</li>
+                            <li>Bem</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>npm</li>
+                            <li>GitHub</li>
+                        </ul> 
+                    </div>
+                    
                 </div>
                 <div className="about__box_image">
                     <img src={portrait} alt="portrait" /></div>
-                <div className="about__box_skills">
-                    <h1>Skills</h1>
-                    <h3>Know my way around ..</h3>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Sass</li>
-                        <li>Bem</li>
-                        <li>JavaScript</li>
-                        <li>React</li>
-                        <li>Node.js</li>
-                        <li>npm</li>
-                        <li>GitHub</li>
-                    </ul> 
-                </div>
             </div>
         </div>
     )

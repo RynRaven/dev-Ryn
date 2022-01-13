@@ -16,7 +16,7 @@ const NavBar = () => {
     const [toggleMenu, setToggleMenu] = useState(false)
 
     return (
-        <div className="page__navbar section--padding">
+        <div className="page__navbar">
             <div className="page__navbar-links">
                 <div className="page__navbar-links_logo">
                     <img src={logo} alt="logo" />

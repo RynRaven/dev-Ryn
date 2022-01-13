@@ -3,53 +3,119 @@
     flex-direction: column;
     align-items: center;
     font-family: var(--font-family);
-    background-color: var(--color-bgdown);
-    
-    &__tittle {
-        margin: 1rem 0;
-        font-size: 46px;
-        color: var(--color-text);
-    }
+    background-color: var(--color-accent);
+
     
     &__box{
         display: flex;
         flex-wrap: wrap;
-        background-color: var(--color-bgup);
-        border-radius: 30px;
-        filter: drop-shadow(0 5px 20px var(--color-blue));
-        //box-shadow: 0 0 20px var(--color-blue);
+        background-color: var(--color-light);
+        filter: brightness(90%);
+        box-shadow: 5px 5px 30px 10px var(--color-bright);
         font-size: 30px;
-        color: var(--color-subtext);
+        color: var(--color-dark);
         margin: 1rem 0;
         padding: 2rem 2rem;
-
+        position: relative;
+        
         &_info {
             flex: 2;
             text-align: start;
             text-align: justify;
             padding: 4rem;
-            padding-right: 6rem;
         }
         
         &_image {
             flex: 1;
             text-align: center;
             height: 600px;
-
+            
             img {
                 height: 600px;
+                padding: 2rem 4rem;
             }
         }
-
+        
         &_skills {
             flex: 2;
-            text-align: end;
             padding: 4rem;
-
-            ul {
-                list-style-type: none;
+            
+            &-container {
+                
             }
             
         }
     }
+    
+    ul {
+        list-style-type: none;
+    }
+
+    @media (max-width: 1536px){
+
+        &__box {
+            font-size: 20px;
+            padding: .5rem 0.5rem;
+
+            &_info {
+                flex: 3;
+            }
+            &_skills {
+                flex: 1;
+            }
+        }
+    }
+
+    @media (max-width: 1336px) {
+        height: 75vh;
+    
+        &__box {
+            font-size: 24px;
+            margin-top: 2rem;
+            padding: 1rem 0.5rem;
+
+            &_info, &_skills{
+                padding: 2rem 1rem;
+            }
+
+            &_info {
+                flex: 3;
+            }
+            &_skills {
+                flex: 1;
+            }
+            
+            &_image {   
+                img {
+                    height: 450px;
+                    padding: 2rem 2rem;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1024px){
+        height: 90vh;
+    }
+
+    @media screen and (max-width: 768px){
+        height: 100%;
+
+        &__box {
+            font-size: 1rem;
+
+            &_info, &_skills{
+                padding: 1rem 1rem;
+            }
+
+            &_image {
+                height: 100%;
+                img {
+                    padding: 0 1rem;
+                    height: 300px;
+                }
+            }
+        }
+    }
 }
+

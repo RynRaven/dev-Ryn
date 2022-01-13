@@ -13,20 +13,35 @@
 
     h1 {
         font-size: 56px;
-        color: var(--color-text);
+        color: var(--color-dark);
     }
 
     h3 {
         font-size: 28px;
-        color: var(--color-subtext);
-        font-weight: 100;
+        color: var(--color-dark);
+        font-weight: 400;
         margin-bottom: 1rem;
     }
 
     &_item {
         height: 3px;
         width: 100px;
-        background-color: var(--color-blue);
+        background-color: var(--color-bright);
+    }
 
+    @media screen and (max-width: 768px){
+        height: 100px;
+        h1 {
+            font-size: 2rem;
+        }
+
+        h3 {
+            font-size: 1rem;
+        }
+
+        &_item {
+            height: 2px;
+            width: 50px;
+        }
     }
 }

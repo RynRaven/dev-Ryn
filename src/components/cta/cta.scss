@@ -2,10 +2,10 @@
     height: 40vh;
     display: flex;
     align-items: center;
-    background-color: var(--color-bgdown);
+    background-color: var(--color-accent);
     font-family: var(--font-family);
-
-        &_resume, &_contact {
+    
+    &_resume, &_contact {
             padding: 2rem 4rem;
             width: 45%;
             height: 13rem;
@@ -13,8 +13,9 @@
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
-            background-color: var(--color-bgup);
-            filter: drop-shadow(0 5px 20px var(--color-blue));
+            background-color: var(--color-dark);
+            //filter: drop-shadow(0 5px 20px var(--color-bright));
+            box-shadow: 5px 5px 30px 10px var(--color-bright);
             
             button {
                 padding: 1rem 2rem;
@@ -22,34 +23,75 @@
                 font-size: 22px;
                 border-radius: 30px;
                 border: none;
-                background-color: rgba(54, 23, 45, 0.6);
+                background-color: var(--color-neutral);
                 cursor: pointer;
-                color: var(--color-subtext);
+                color: var(--color-dark);
                 font-family: var(--font-family);
-                font-weight: 100;
-                box-shadow: 3px 7px 10px #4b14f6;
-
+                font-weight: 400;
+                box-shadow: 3px 7px 10px var(--color-bright);
+                
                 &:hover {
                     animation: rotate 0.7s ease-in-out both;
                 }
             }
             
             h3 {
-                color: var(--color-text);
+                color: var(--color-light);
                 font-size: 36px;
-                font-weight: 100;
+                font-weight: 400;
+            }
+        }
+        
+    &_resume {
+        //border-radius: 0 30px 30px 0;
+        left: 0;
+        align-items: flex-end;
+    }
+        
+    &_contact {
+        //border-radius: 30px 0 0 30px;
+        right: 0;
+        align-items: flex-start;
+    }
+
+    @media (max-width: 1536px){
+        height: 45vh;
+    }
+    
+    @media (max-width: 1336px) {
+        height: 20vh;
+
+        &_contact {
+            box-shadow: 2px 2px 20px 10px var(--color-bright);
+        }
+    }
+
+    @media (max-width: 1024px){
+        height: 30vh;
+    }
+
+    @media screen and (max-width: 768px){
+        height: 50vh;
+
+        &_resume, &_contact {
+            padding: 1rem 2rem;
+
+            h3 {
+                font-size: 18px;
+            }
+
+            button {
+                font-size: 18px;
+                font-weight: 500;
+                padding: .5rem;
+                width: 5rem;
             }
         }
 
         &_resume {
-            border-radius: 0 30px 30px 0;
-            left: 0;
-            align-items: flex-end;
+            h3 {
+                text-align: end;
+            }
         }
-
-        &_contact {
-            border-radius: 30px 0 0 30px;
-            right: 0;
-            align-items: flex-start;
-        }
+    }
 }

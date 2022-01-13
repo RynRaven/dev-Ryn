@@ -1,12 +1,13 @@
 .footer {
-    background-color: var(--color-footer);
+    background-color: var(--color-dark);
+    filter: brightness(140%);
     height: 15vh;
     font-family: var(--font-family);
-    color: var(--color-text);
+    color: var(--color-neutral);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    filter: drop-shadow(0 5px 20px var(--color-blue));
+    filter: drop-shadow(0 -10px 10px var(--color-bright));
 
     &__up {
         display: flex;
@@ -27,19 +28,74 @@
 
             p {
                 font-size: 24px;
+                font-weight: 400;
+
+                &:hover {
+                    font-weight: 400;
+                    font-size: 26px;
+                    text-shadow: 6px 6px 6px var(--color-bright);
+                }
             }
         }
     }
 
     &__down {
         text-align: center;
-        background-color: var(--color-bgup);
+        background-color: var(--color-dark);
+        filter: brightness(70%);
         padding: 1rem;
 
         p {
             font-size: 18px;
             letter-spacing: .3rem;
+            color: var(--color-light);
         }
     }
+
+    @media (max-width: 1536px){
+        height: 18vh;
+    }
     
+    @media (max-width: 1024px) {
+        height: 14vh;
+        &__up {
+            &-nav{
+                width: 60%;
+                & p{
+                    font-size: 18px;
+                }
+            }
+            &-logo{
+                & img {
+                    height: 40px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px){
+        height: 14vh;
+        &__up {
+            padding: .5rem;
+            &-nav{
+                width: 60%;
+                & p{
+                    font-size: 14px;
+                }
+            }
+            &-logo{
+                padding-left: 1rem;
+                & img {
+                    height: 20px;
+                    margin: auto;
+                }
+            }
+        }
+
+        &__down {
+            p {
+                font-size: 14px;
+            }
+        }
+    }
 }

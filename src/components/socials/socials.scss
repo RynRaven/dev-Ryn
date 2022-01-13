@@ -14,7 +14,7 @@
             padding: 1rem 0;
             margin: 1.5rem 0;
             position: relative;
-            background-color: #ffffffa6;
+            background-color: var(--color-light);
             border-radius: 50%;
             width: 40px;
             height: 40px;
@@ -22,7 +22,7 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            box-shadow: 0 10px 10px #4c14f6d3;
+            box-shadow: 3px 3px 10px 3px var(--color-bright);
             cursor: pointer;
             transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
             
@@ -33,8 +33,8 @@
             &:hover {
                 transition: all 0.8s;
 
-                background-color: #000000;
-                color: #ffffff;
+                background-color: var(--color-dark);
+                color: var(--color-light);
 
                 .socials_icons-popup {
                     top: -37px;
@@ -43,8 +43,8 @@
                     pointer-events: auto;
                     text-shadow: 0px -1px 0px rgba(143, 143, 143, 0.247);
                     font-size: 16px;
-                    background-color: #000000;
-                    color: #ffffff;
+                    background-color: var(--color-dark);
+                    color: var(--color-light);
                 }
             }
         }
@@ -56,11 +56,11 @@
             font-size: 16px;
             text-align: center;
             width: 100px;
-            background-color: #ffffff;
-            color: #000000;
+            //background-color: var(bg-light);
+            //color: var(--bg-dark);
             padding: 5px 8px;
             border-radius: 5px;
-            box-shadow: 0 10px 10px #4c14f6d3;
+            box-shadow: 0 10px 10px var(--color-bright);
             opacity: 0;
             pointer-events: none;
             transition: all 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -71,12 +71,18 @@
             content: "";
             height: 8px;
             width: 8px;
-            background-color: #000000;
+            background-color: var(--color-dark);
             bottom: -3px;
             left: 50%;
             transform: translate(-50%) rotate(45deg);
             transition: all 2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-            color: #000000;
+            //color: #000000;
+        }
+    }
+
+    @media screen and (max-width: 768px){
+        &_icons {
+            right: 25px;
         }
     }
 }

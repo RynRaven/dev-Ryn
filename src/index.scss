@@ -8,18 +8,17 @@
     --font-family: 'Rajdhani', sans-serif;
     --font-header: 'Amatic SC', cursive;
 
-    --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
-    --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+    --color-light: #FCE0D1;
+    --color-light-alpha: rgba(252, 224, 209, 0.7);
+    --color-dark: #193D37;
+    --color-bright: #E84A5F;
+    --color-bright-alpha: rgba(232, 74, 95, 0.6);
+    --color-accent: #80B68F;
+    --color-accent-alpha: rgba(128, 182, 143, 0.6);
+    --color-neutral: #ffc3ac;
+    --color-neutral-alpha: rgba(255, 195, 172, 0.8);
 
-    --color-bg: #301729;
-    --color-footer : #1A0F1A ;
-    --color-blog: #042c54;
-    --color-text: #fdfff1;
-    --color-subtext: hsl(0, 0%, 100%);
-    --color-menu: rgba(255, 255, 255, 0.6);
-
-    --color-blue: #4b14f6;
-
-    --color-bgup: #360a16;
-    --color-bgdown: #281428;
+    --bg-dark: #000;
+    --bg-light: #ccc;
+    
 }
