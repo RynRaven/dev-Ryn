@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './navbar.scss';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
+import { TiThMenu , TiChevronLeftOutline} from 'react-icons/ti';
 import logo from '../../assets/w-logo.png'
 
 const Menu = () => (
@@ -27,8 +28,8 @@ const NavBar = () => {
             </div>
             <div className="page__navbar-menu">
                 {toggleMenu
-                ? <RiCloseLine color="#fff" size={30} onClick={() => setToggleMenu(false)} />
-                : <RiMenu3Line color="#fff" size={30} onClick={() => setToggleMenu(true)} />
+                ? <TiChevronLeftOutline color="var(--color-bright)" size={40} onClick={() => setToggleMenu(false)} />
+                : <TiThMenu color="var(--color-bright)" size={35} onClick={() => setToggleMenu(true)} />
                 }
                 {toggleMenu && (
                 <div className="page__navbar-menu_container scale-up-center">

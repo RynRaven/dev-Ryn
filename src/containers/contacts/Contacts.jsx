@@ -78,7 +78,7 @@ const Contacts = () => {
                             <span>
                                 <HiPhone size={35}/> 
                             </span>
-                            +371 28****34</p>
+                            +371 28018734</p>
                         <p>
                             <span>
                                 <HiOutlineLocationMarker size={35}/>

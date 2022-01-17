@@ -13,16 +13,17 @@
         filter: brightness(90%);
         box-shadow: 5px 5px 30px 10px var(--color-bright);
         font-size: 30px;
+        font-weight: 500;
         color: var(--color-dark);
         margin: 1rem 0;
         padding: 2rem 2rem;
         position: relative;
         
         &_info {
-            flex: 2;
+            flex: 4;
             text-align: start;
             text-align: justify;
-            padding: 4rem;
+            padding: 4rem 2rem 4rem 4rem;
         }
         
         &_image {
@@ -38,10 +39,10 @@
         
         &_skills {
             flex: 2;
-            padding: 4rem;
+            padding: 4rem 2rem;
             
             &-container {
-                
+                text-align: start;
             }
             
         }

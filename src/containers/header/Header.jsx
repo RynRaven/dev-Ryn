@@ -10,7 +10,7 @@ function Header() {
             <div className="page__header-content">
                 <div className="page__header-content_text">
                     <h4 className="page__header-content_text-intro">Hi There! I am </h4>
-                    <h1 className="page__header-content_text-main">Ryn Oliveira</h1>
+                    <h1 className="page__header-content_text-main">Līga Zeibolde</h1>
                     <h3 className="page__header-content_text-description">Front-End / UI developer</h3>
                 </div>
                 <button className="page__header-content_button" type="button">
