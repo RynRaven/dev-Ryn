@@ -18,7 +18,7 @@ function Footer() {
             </div>
             <div className="footer__down">
                 <div className="footer__down-copyright">
-                    <p>Copyright 2021 ©RynOliveira </p>
+                    <p>Copyright 2021 ©LīgaZeibolde </p>
                 </div>
             </div>
         </div>

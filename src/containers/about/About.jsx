@@ -12,7 +12,10 @@ function About () {
             <div className="about__box">
                 <div className="about__box_info">
                     <p>
-                        Hai! My name is Līga Zeibolde and I am self-thought Front-End developer based in Riga, Latvia. Started my learning of Web development in the August of 2020. I'm able to work with following technologies: 
+                    Hello! My name is Ryn and I am self-thought front-End developer based in Riga, Latvia.
+                    I can easily adapt to every situation and am open for out of the box thinking in order to achieve the best results in most efficient way. 
+                    I’m multilingual and fluent in English and Latvian, with some knowledge in Russian and eager to learn Portuguese. 
+                    As it goes for tech side, I am able to work with following technologies: 
                     </p>
                 </div>
                 <div className="about__box_skills">
