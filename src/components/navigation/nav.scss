@@ -56,10 +56,12 @@
     }
 
     @media screen and (max-width: 768px){
-        top: 1%;
+        top: 2px;
+        width: auto;
         left: 50%;
-        width: 50px;
+        right: 50%;
 
+        
         &__list {
             flex-direction: row;
 

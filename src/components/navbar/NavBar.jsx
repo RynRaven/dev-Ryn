@@ -29,7 +29,7 @@ const NavBar = () => {
             <div className="page__navbar-menu">
                 {toggleMenu
                 ? <TiChevronLeftOutline color="var(--color-bright)" size={40} onClick={() => setToggleMenu(false)} />
-                : <TiThMenu color="var(--color-bright)" size={35} onClick={() => setToggleMenu(true)} />
+                : <TiThMenu color="var(--color-accent)" size={35} onClick={() => setToggleMenu(true)} />
                 }
                 {toggleMenu && (
                 <div className="page__navbar-menu_container scale-up-center">

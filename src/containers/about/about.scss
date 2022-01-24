@@ -80,6 +80,7 @@
 
             &_info {
                 flex: 3;
+                min-width: 400px;
             }
             &_skills {
                 flex: 1;
@@ -108,6 +109,10 @@
                     padding: 2rem 1rem 1rem 1rem;
                 }
             }
+
+            &_info {
+                min-width: 350px;
+            }
         }
     }
 
@@ -124,6 +129,7 @@
             &_info {
                 flex: 2;
                 padding-right: 1rem;
+                min-width: 300px;
             }
 
             &_image {
@@ -131,6 +137,22 @@
                 img {
                     padding: 0 1rem;
                     height: 250px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 600px){
+        &__box {
+            flex-wrap: wrap;
+            padding: 2rem 2rem;
+            &_info {
+                min-width: 250px;
+            }
+
+            &_image {
+                img {
+                    padding: 0;
                 }
             }
         }
