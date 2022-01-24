@@ -16,10 +16,10 @@
             align-items: flex-start;
             justify-content: flex-start;
             padding-top: 5rem;
-            padding-left: 2rem;
+            //padding-left: 2rem;
             
             &_text{
-                color: var(--color-dark);
+                color: var(--color-light);
                 font-family: var(--font-family);
                 
                 &-intro {
@@ -29,7 +29,7 @@
                 
                 &-main {
                     font-family: var(--font-family);
-                    font-size: 10rem;
+                    font-size: 8rem;
                     letter-spacing: 3px;
                     font-weight: 600;
                 }
@@ -37,7 +37,7 @@
                 &-description {
                     font-size: 3rem;
                     font-weight: 100;
-                    color: var(--color-dark);
+                    color: var(--color-neutral);
                 }
             }
             
@@ -48,12 +48,12 @@
                 font-size: 2rem;
                 border-radius: 30px;
                 border: none;
-                background-color: var(--color-neutral-alpha);
+                background-color: var(--color-dark);
                 cursor: pointer;
-                color: var(--color-dark);
+                color: var(--color-light);
                 font-family: var(--font-family);
                 font-weight: 500;
-                box-shadow: 3px 7px 10px var(--color-bright);
+                //box-shadow: 3px 7px 10px var(--color-bright);
                 
                 &:hover {
                     animation: rotate 0.7s ease-in-out both;
@@ -62,8 +62,8 @@
             
         }
         
-        @media (max-width: 1336px) {
-            height: 60vh;
+        @media screen and (max-width: 1366px){
+            height: auto;
 
             &-content {
                 &_text {
@@ -72,9 +72,9 @@
                     }
                 }
             }
-        }
+        } 
 
-        @media (max-width: 1024px) {
+        @media screen and (max-width: 1024px){
             &-content {
                 &_text {
                     &-main {

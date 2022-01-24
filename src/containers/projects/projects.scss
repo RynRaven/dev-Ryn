@@ -12,31 +12,32 @@
         top: 26%;
         padding: 1rem 0;
         //filter: drop-shadow(0 4px 20px var(--color-blue));
-        box-shadow: 5px 5px 30px 20px var(--color-bright);
+        box-shadow: 5px 5px 20px 10px var(--color-dark);
         
         &_card {
             padding: 2rem;
             width: 100%;
-            height: 550px;
+            height: 500px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             position: relative;
             
             & img{
-                // border: 3px var(--color-blue) solid;
+                // border: 3px var(--color-blue) solid; 
                 width: 100%;
                 height: 200px;
                 cursor: pointer;
-                box-shadow: 5px 5px 20px 7px var(--color-bright);
+                box-shadow: 5px 5px 20px 7px var(--color-accent);
             }
             
             &-text{
-                font-size: 20px;
+                font-size: 16px;
+                font-weight: 500;
                 font-family: var(--font-family);
                 color: var(--color-dark);
                 padding: 1rem 0;
-                height: 200px;
+                height: 180px;
             }
             
             &-view {
@@ -45,16 +46,16 @@
                 & button {
                     padding: .5rem .7rem;
                     margin: 0 .4rem;
-                    width: 6.5rem;
-                    font-size: 20px;
+                    width: 5rem;
+                    font-size: 16px;
                     border-radius: 30px;
                     border: none;
-                    background-color: var(--color-accent);
+                    background-color: var(--color-light);
                     cursor: pointer;
                     color: var(--color-dark);
                     font-family: var(--font-family);
                     font-weight: 600;
-                    box-shadow: 3px 7px 10px var(--color-bright);
+                    box-shadow: 3px 7px 10px var(--color-accent);
                     
                     &:hover {
                         animation: rotate 0.7s ease-in-out both;
@@ -65,11 +66,15 @@
         }
     }
 
-    @media (max-width: 1536px){
+    @media screen and (max-width: 1366px){
+        height: 95vh;
+
         &__container{
-            box-shadow: 2px 2px 20px 10px var(--color-bright);
+            box-shadow: 2px 2px 20px 10px var(--color-dark);
+
             &_card {
-                padding: 2rem;
+                padding: 1rem;
+                height: 450px;
 
                 &-text {
                     font-size: 18px;
@@ -77,36 +82,21 @@
                 &-view {
                     & button {
                         padding: .5rem 0;
-                        font-size: 18px;
-                        width: 5rem;
+                        font-size: 16px;
+                        width: 4rem;
                         margin: 0;
                     }
+                }
+                & img {
+                    height: 150px;
+                    width: 90%;
                 }
             }
         }
     }
 
-    @media (max-width: 1336px) {
-        height: 80vh;
-
-        &__container{
-            box-shadow: 2px 2px 20px 10px var(--color-bright);
-            &_card {
-                padding: 1rem;
-
-                &-text {
-                    font-size: 18px;
-                }
-                &-view {
-                    & button {
-                        padding: .5rem 0;
-                        font-size: 18px;
-                        width: 5rem;
-                        margin: 0;
-                    }
-                }
-            }
-        }
+    @media screen and (max-width: 1024px){
+        height: 105vh;
     }
 
     @media screen and (max-width: 768px){
@@ -115,11 +105,15 @@
         &__container{
             &_card {
                 padding: 1rem;
-                height: 400px;
+                height: 450px;
 
                 &-text {
                     font-size: 12px;
                     height: 150px;
+
+                    & p {
+                        padding: 1rem;
+                    }
                 }
                 &-view {
                     padding-bottom: 1rem;
@@ -130,9 +124,9 @@
                         margin: 0;
                     }
                 }
-
+                
                 img {
-                    height: 100px;
+                    width: 100%;
                 }
             }
         }

@@ -15,7 +15,7 @@
             padding: 1rem 0;
             margin: 1.5rem 0;
             position: relative;
-            background-color: var(--color-light);
+            background-color: var(--color-dark);
             border-radius: 50%;
             width: 40px;
             height: 40px;
@@ -23,12 +23,13 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            box-shadow: 3px 3px 10px 3px var(--color-bright);
+            box-shadow: 2px 2px 7px .5px var(--color-bright);
             cursor: pointer;
             transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
             
             span {
                 display: flex;
+                color: var(--color-light);
             }
             
             &:hover {

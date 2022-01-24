@@ -1,6 +1,6 @@
 import React from 'react';
 import './cta.scss';
-import resume from '../../assets/Resume2022.docx'
+import resume from '../../assets/Resume22.pdf'
 
 const CTA = () => {
     return (

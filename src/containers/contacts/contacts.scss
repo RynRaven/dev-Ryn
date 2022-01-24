@@ -1,30 +1,37 @@
 .contacts {
-    height: 100vh;
+    height: auto;
     position: relative;
     background-color: var(--color-accent);
+    padding-bottom: 2rem;
 
-    @media (max-width: 1536px){
-        height: 110vh;
+    @media screen and (max-width: 1366px){
+        height: 90vh;
+        //padding-bottom: 4rem;
     }
 
+    @media screen and (max-width: 1024px){
+        height: auto;
+        //padding-bottom: 4rem;
+    }
+    
     @media screen and (max-width: 768px){
-        height: 100vh;
+        height: auto;
     }
 
     
     &__container { 
         display: flex;
         justify-content: space-between;
-        margin-top: 5rem;
+        margin-top: 2rem;
 
-        @media (max-width: 1536px){
-            margin-top: 1rem;
+        @media screen and (max-width: 1366px){
+            margin-top: 2rem;
         }
         
         &_submit , &_socials {
-            height: 35rem;
+            height: 35rem; 
             padding: 1rem 0;
-            box-shadow: 5px 5px 30px 20px var(--color-bright);
+            
             padding: 2rem 3rem;
         }
         
@@ -35,6 +42,7 @@
             justify-content: space-evenly;
             align-items: flex-end;
             width: 60%;
+            //box-shadow: 5px 5px 30px 20px var(--color-dark);
             
             &-subtittle {
                 font-size: 36px;
@@ -60,7 +68,7 @@
                     
                     &::placeholder {
                         color: var(--color-accent);
-                        opacity: 80%;
+                        opacity: 70%;
                     }
                     
                 }
@@ -72,12 +80,12 @@
                     font-size: 20px;
                     border-radius: 30px;
                     border: none;
-                    background-color: var(--color-accent);
+                    background-color: var(--color-light);
                     cursor: pointer;
                     color: var(--color-dark);
                     font-family: var(--font-family);
                     font-weight: 400;
-                    box-shadow: 3px 7px 10px var(--color-bright);
+                    box-shadow: 3px 7px 10px var(--color-accent);
                     
                     &:hover {
                         animation: rotate 0.7s ease-in-out both;
@@ -95,7 +103,8 @@
             background-color: var(--color-dark);
             display:flex;
             width: 30%;
-            
+            //box-shadow: 5px 5px 20px 5px var(--color-neutral);
+
             &-info { 
                 display: flex;
                 flex-direction: column;
@@ -123,24 +132,35 @@
             }
         }
 
-        @media (max-width: 1336px) {
-
+        @media screen and (max-width: 1366px){
+            &_submit {
+                height: 30rem;
+            }
             &_socials {
+                height: 30rem;
                 &-info {
                     flex-direction: row;
                     padding-top: 3rem;
                     padding-right: 2rem;
                     & p {
                         writing-mode: tb-rl;
+                        padding-right: .5rem;
+                        & span{
+                            padding: 0 0 1rem 0;
+                        }
                     }
+                }
+                &-links{
+                    padding: 0;
                 }
             }
         }
         
-        @media (max-width: 1024px) {
+        @media screen and (max-width: 1024px){
             flex-direction: column;
             position: relative;
             justify-content: flex-start;
+            margin-bottom: 2rem;
             
             &_submit {
                 width: 80%;
@@ -150,7 +170,7 @@
                 height: 7rem;
                 width: 100%;
                 //position: relative;
-                box-shadow: 2px 2px 20px 10px var(--color-bright);
+                //box-shadow: 2px 2px 20px 10px var(--color-dark);
                 
                 &-info {
                     padding: 0;
@@ -199,6 +219,7 @@
             }
             &_socials {
                 width: 70%;
+                height: 9rem;
 
                 &-info {
                     flex-direction: column;
@@ -206,6 +227,10 @@
                     p {
                         font-size: 10px;
                         margin: 0;
+
+                        span {
+                            padding: 0;
+                        }
                     }
                 }
             }
@@ -218,6 +243,7 @@
     color: var(--color-dark);
     font-family: var(--font-family);
     font-size: 20px;
+    font-weight: 500;
 
     @media screen and (max-width: 768px){
         font-size: 10px;
