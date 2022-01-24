@@ -12,7 +12,7 @@ function About () {
             <div className="about__box">
                 <div className="about__box_info">
                     <p>
-                    Hello! My name is Ryn and I am self-thought front-End developer based in Riga, Latvia.
+                    Hello! My name is Līga and I am self-thought front-End developer based in Riga, Latvia.
                     I can easily adapt to every situation and am open for out of the box thinking in order to achieve the best results in most efficient way. 
                     I’m multilingual and fluent in English and Latvian, with some knowledge in Russian and eager to learn Portuguese. 
                     As it goes for tech side, I am able to work with following technologies: 
