@@ -69,7 +69,7 @@ const Projects = () => {
                     </div>
                     <div className="projects__container_card card-2">
                     <div className="projects__containter_card-img">
-                            <a href={project2} target="_blank">
+                            <a href="https://rynraven.github.io/WeatherAppAPI/" target="_blank">
                                 <img src={project2} alt="project2" />
                             </a>
                         </div>
@@ -78,8 +78,8 @@ const Projects = () => {
                             <p>Weather App made using OpenWeatherMap API key, accesing current location displays current weather and 7 day forecast. Used HTML, CSS (Sass) and JS. Responsive design.</p>
                         </div>
                         <div className="projects__container_card-view">
-                            <a href={project2} target="_blank">
-                                <button>View full</button>
+                            <a href="https://rynraven.github.io/WeatherAppAPI/" target="_blank">
+                                <button>View page</button>
                             </a>
                             <a href="https://www.figma.com/proto/k1KP5G67iithkw04uSFSWb/Weather-APP-with-API-using-current-location?page-id=0%3A1&node-id=105%3A2&viewport=241%2C48%2C0.16&scaling=contain" target="_blank">
                                 <button>Figma</button>
