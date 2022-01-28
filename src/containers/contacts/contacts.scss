@@ -46,15 +46,23 @@
                 font-size: 36px;
                 color: var(--color-dark);
                 font-family: var(--font-family);
-                padding: 0 2rem;
+                padding: 0 2rem 1rem 0;
             }
             
             &--form {
                 display: flex;
                 flex-direction: column;
-                align-items: flex-end;
+                align-items: flex-start;
                 
-                
+                label {
+                    font-family: var(--font-family);
+                    font-weight: 600;
+                    color: var(--color-accent);
+                    font-size: 20px;
+                    padding: 0 1rem;
+                    line-height: 20px;
+                }
+
                 &-name, &-mail, &-field {
                     font-size: 20px;
                     padding: 1rem;
@@ -64,15 +72,12 @@
                     border-radius: 20px;
                     font-weight: 600;
                     
-                    &::placeholder, ::-webkit-input-placeholder, ::-moz-placeholder, :-ms-input-placeholder, :-moz-placeholder {
-                        color: var(--color-accent);
-                    }
                     
                 }
                 
                 &-button {
-                    padding: .5rem .7rem;
-                    margin: 1rem;
+                    padding: .4rem .7rem;
+                    margin: .5rem 1rem;
                     width: 6.5rem;
                     font-size: 20px;
                     border-radius: 30px;
@@ -131,7 +136,7 @@
 
         @media screen and (max-width: 1366px){
             &_submit {
-                height: 30rem;
+                height: auto;
             }
             &_socials {
                 height: 30rem;
@@ -195,10 +200,11 @@
 
                 &-subtittle {
                     font-size: 20px;
-                    padding: 0 1rem;
+                    padding: 0 1rem 1rem 0;
                 }
 
                 &--form {
+                    
                     &-name, &-mail, &-field {
                         font-size: 12px;
                         width: 200px;
@@ -210,6 +216,12 @@
                         margin: .5rem;
                         width: 5rem;
                         font-size: 12px;
+                    }
+
+                    label {
+                        font-size: 14px;
+                        line-height: 10px;
+                        font-weight: 500;
                     }
                 }
 
@@ -239,7 +251,7 @@
 .result-text {
     color: var(--color-dark);
     font-family: var(--font-family);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
 
     @media screen and (max-width: 768px){

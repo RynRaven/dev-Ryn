@@ -6,7 +6,7 @@ import { HiMail, HiPhone, HiOutlineLocationMarker } from 'react-icons/hi';
 
 const Result =() => {
     return (
-        <p className="result-text">Your messsage has been succesfully sent! You will be contacted shotly.
+        <p className="result-text">Your messsage has been succesfully sent! <br/> You will be contacted shortly.
         </p>
     )
 }
@@ -44,26 +44,29 @@ const Contacts = () => {
                     <form className="contacts__container_submit--form" 
                             ref={form} onSubmit={sendEmail}
                             autocomplete="on">
+                        <label htmlFor="user_name">Your name</label>
                         <input className="contacts__container_submit--form-name" 
                             type="text" 
                             name="user_name" 
                             placeholder="Your Name"
                             required/>
+                        <label htmlFor="contacts__container_submit--form-mail">Your Email</label>
                         <input className="contacts__container_submit--form-mail" 
                             type="email" 
                             name="user_email" 
                             placeholder="Your Email"
                             required/>
+                        <label htmlFor="user_name">Enter Your message here</label>
                         <textarea className="contacts__container_submit--form-field" 
                             name="message" 
                             placeholder="Enter Your message .. "
                             rows={4}
                             required/>
                         <div className="contacts__container_submit--form-done">
-                            { result ?  <Result/> : null}
                         <input className="contacts__container_submit--form-button"
                         type="submit" 
                         value="Send" />
+                        { result ?  <Result/> : null}
                         </div>
                     </form>
                 </div>
